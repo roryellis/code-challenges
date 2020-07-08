@@ -1,4 +1,4 @@
-# Given a checker board grid with columns marked A-H, and rows marked 1-8, create a function that determines if two cell inputs are the same color example checker_board_cell_color(A3,C5) should output True
+# Given a checker board grid with columns marked A-H, and rows marked 1-8, create a function that determines if two cell inputs are the same color example checker_board_cell_color('A3','C5') should output True
 
 def checker_board_cell_color(cell1, cell2):
     def get_cell_value(cell):
@@ -20,3 +20,10 @@ def checker_board_cell_color(cell1, cell2):
     cellValueMatch = cell1Value == cell2Value
 
     return cellValueMatch
+
+
+# returns True
+print(checker_board_cell_color('A3', 'C5'))
+
+# returns False
+print(checker_board_cell_color('B6', 'C6'))
